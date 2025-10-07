@@ -235,9 +235,10 @@ Hint: Use the String.prototype.split() method to separate the first and last
 
 // Complete the exercise in the space below:
 
-/* const namesplit = people.split(',')
-const firstLast = namesplit.map((name) => {
-  return 'First Last'
+const firstLast = people.map((name) => {
+   const nameArray = name.split(', ')
+   console.log(nameArray)
+  return `${nameArray[1]} ${nameArray[0]}`
 });
 
 // Check your work:
